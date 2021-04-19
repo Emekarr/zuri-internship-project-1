@@ -1,9 +1,10 @@
-const http = require("http")
+const http = require("http");
 
 const server = http.createServer((req, res) => {
+  require("./fetch");
 
-    res.write("done")
-    res.end()
-})
+  res.write("done");
+  res.end();
+});
 
-server.listen(5000)
+server.listen(5000);
